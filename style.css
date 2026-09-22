@@ -1,297 +1,309 @@
-/* Reseta margens e define a fonte padrão */
+/* Configurações Gerais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Paleta de Cores em Bege Pastel e Creme */
 body {
-  background-color: #fdfbf7; /* Creme claro */
-  color: #2c2a29; /* Grafite suave para leitura */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
   line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #f5efeb; /* Bege pastel */
+  background-color: #fff;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
-  font-size: 1.4rem;
   font-weight: bold;
-  color: #4a3e3d;
+  font-size: 20px;
+  color: #111;
 }
 
 nav a {
-  margin-left: 20px;
   text-decoration: none;
-  color: #4a3e3d;
+  color: #555;
+  margin-left: 20px;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 nav a:hover {
-  color: #c4a484;
+  color: #007bff;
 }
 
-/* Seção Principal (Hero) */
+/* Apresentação (Hero) */
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background-color: #fdfbf7;
+  padding: 80px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: #3a302f;
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #111;
 }
 
-/* Estilização da Foto de Perfil */
 .foto-container {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .foto-perfil {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%; /* Torna a imagem circular */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #e8dcd3; /* Borda em tom bege pastel suave */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 3px solid #007bff;
 }
 
 .subtitulo {
-  font-size: 1.1rem;
-  color: #6e6259;
-  margin-bottom: 25px;
+  font-size: 18px;
+  color: #666;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 25px auto;
 }
 
-/* Botões */
-.botoes .btn {
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
   display: inline-block;
-  padding: 10px 24px;
-  background-color: #c4a484; /* Bege terroso */
-  color: white;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 6px;
-  margin: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  font-weight: 500;
+  transition: background 0.2s;
 }
 
-.botoes .btn:hover {
-  background-color: #b08f70;
+.btn:hover {
+  background-color: #0056b3;
 }
 
-.botoes .btn-outline {
+.btn-outline {
   background-color: transparent;
-  border: 2px solid #c4a484;
-  color: #3a302f;
+  color: #007bff;
+  border: 2px solid #007bff;
 }
 
-.botoes .btn-outline:hover {
-  background-color: #c4a484;
-  color: white;
+.btn-outline:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
-/* Seções Gerais */
+/* Seções */
 .secao {
-  padding: 50px 10%;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.secao h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #111;
+  text-align: center;
+}
+
+.secao p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .secao-destaque {
-  background-color: #f5efeb; /* Fundo alternado bege pastel */
+  background-color: #f1f4f8;
+  max-width: 100%;
 }
 
-h2 {
-  margin-bottom: 20px;
-  color: #3a302f;
-  font-size: 1.8rem;
-}
-
-h3 {
+.secao-destaque h3 {
+  text-align: center;
   margin: 20px 0 10px 0;
-  color: #5c4e4b;
+  color: #333;
 }
 
-/* Listas de Habilidades */
+/* Habilidades */
 .skills-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   list-style: none;
-  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .skills-list li {
-  background-color: #e8dcd3;
+  background-color: #fff;
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 0.9rem;
-  color: #3a302f;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e4e8;
 }
 
-/* Cards de Projetos */
+/* Grade de Projetos */
 .grid-projetos {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .card-projeto {
-  background-color: white;
-  padding: 24px;
+  background: #fff;
   border-radius: 8px;
-  border: 1px solid #e8dcd3;
-  max-width: 400px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.card-projeto h3 {
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card-projeto p {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* Tags de tecnologia */
 .tag {
   display: inline-block;
-  background-color: #f5efeb;
-  font-size: 0.8rem;
+  background: #eef2f7;
+  color: #007bff;
   padding: 4px 10px;
-  margin-top: 12px;
   border-radius: 4px;
-  color: #5c4e4b;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 5px;
 }
 
-/* Contato */
-#contato a {
-  color: #8c6a4a;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #e8dcd3;
-  font-size: 0.9rem;
-  color: #4a3e3d;
-}
-/* ... aqui está o seu código do rodapé terminando na linha 185 ... */
-footer {
-  /* suas propriedades do rodapé */
-}
-/* linha 185: } */
-
-/* ========================================== */
-/* COLE TODO O CÓDIGO NOVO DO MOCKUP AQUI EMBAIXO (Linha 186 em diante): */
-/* ========================================== */
-
+/* Estilização do Mockup do FinanPro dentro do Portfólio */
 .vertical-mockup {
   display: block;
-  width: 100%;
-  height: 380px;
-  background-color: #0f172a;
-  border-radius: 8px;
+  background: #111;
+  border-radius: 6px;
   overflow: hidden;
-  position: relative;
   text-decoration: none;
   margin-bottom: 15px;
-  border: 1px solid #334155;
+  border: 1px solid #333;
+  transition: transform 0.2s;
+}
+
+.vertical-mockup:hover {
+  transform: translateY(-3px);
 }
 
 .window-header {
-  height: 28px;
-  background-color: #1e293b;
+  background: #222;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 0 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  gap: 6px;
 }
 
 .window-header .dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
 }
 
-.window-header .red {
-  background-color: #ff5f56;
+.window-header .dot.red {
+  background: #ff5f56;
 }
-.window-header .yellow {
-  background-color: #ffbd2e;
+.window-header .dot.yellow {
+  background: #ffbd2e;
 }
-.window-header .green {
-  background-color: #27c93f;
+.window-header .dot.green {
+  background: #27c93f;
 }
 
 .window-title {
-  font-size: 0.7rem;
-  color: #94a3b8;
+  color: #aaa;
+  font-size: 12px;
   margin-left: 6px;
 }
 
 .window-body {
-  width: 100%;
-  height: 100%;
-  padding-top: 28px;
+  max-height: 180px;
   overflow: hidden;
 }
 
 .scroll-image {
   width: 100%;
-  height: auto;
   display: block;
-  transition: transform 4s ease-in-out;
-}
-
-.vertical-mockup:hover .scroll-image {
-  transform: translateY(calc(-100% + 352px));
 }
 
 .project-info-extra h3 {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-  color: #1e293b;
+  margin-bottom: 6px;
+  color: #111;
 }
 
 .project-info-extra p {
-  font-size: 0.85rem;
-  color: #64748b;
-  line-height: 1.4;
-  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  text-align: left;
 }
 
 .tech-tags-extra {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
   margin-bottom: 15px;
+}
+
+.tech-tags-extra .tag {
+  background: #f0f0f0;
+  color: #333;
 }
 
 .btn-acessar-projeto {
   display: inline-block;
-  font-size: 0.8rem;
-  font-weight: bold;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
   text-decoration: none;
-  color: #0284c7;
-  background-color: #e0f2fe;
-  padding: 6px 12px;
-  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
   transition: background 0.2s;
 }
 
 .btn-acessar-projeto:hover {
-  background-color: #bae6fd;
+  background: #0056b3;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #eaeaea;
 }
