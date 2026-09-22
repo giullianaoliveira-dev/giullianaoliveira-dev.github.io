@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   background-color: #f9f9f9;
   line-height: 1.6;
@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #a89f91;
+  color: #8c7b6e;
 }
 
 /* Apresentação (Hero) */
@@ -66,7 +66,7 @@ nav a:hover {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #d4c5b9; /* Tom creme/pastel original da borda */
+  border: 3px solid #8c7b6e; /* Tom marrom/taupe original da borda */
 }
 
 .subtitulo {
@@ -84,7 +84,7 @@ nav a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #d4c5b9; /* Tom creme/pastel dos botões */
+  background-color: #8c7b6e; /* Tom marrom/taupe dos botões originais */
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -94,17 +94,17 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #bfae9e;
+  background-color: #726256;
 }
 
 .btn-outline {
   background-color: transparent;
   color: #555;
-  border: 2px solid #d4c5b9;
+  border: 2px solid #8c7b6e;
 }
 
 .btn-outline:hover {
-  background-color: #d4c5b9;
+  background-color: #8c7b6e;
   color: #fff;
 }
 
@@ -131,7 +131,7 @@ nav a:hover {
 }
 
 .secao-destaque {
-  background-color: #f7f5f2; /* Fundo levemente em tom creme suave */
+  background-color: #f7f5f2;
   max-width: 100%;
 }
 
@@ -158,7 +158,7 @@ nav a:hover {
   border-radius: 20px;
   font-size: 14px;
   color: #333;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   border: 1px solid #e6e1db;
 }
 
@@ -174,7 +174,7 @@ nav a:hover {
   background: #fff;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   border: 1px solid #eaeaea;
   display: flex;
   flex-direction: column;
@@ -197,7 +197,7 @@ nav a:hover {
 .tag {
   display: inline-block;
   background: #f4f0ec;
-  color: #6d6257;
+  color: #8c7b6e;
   padding: 4px 10px;
   border-radius: 4px;
   font-size: 12px;
@@ -235,15 +235,9 @@ nav a:hover {
   border-radius: 50%;
 }
 
-.window-header .dot.red {
-  background: #ff5f56;
-}
-.window-header .dot.yellow {
-  background: #ffbd2e;
-}
-.window-header .dot.green {
-  background: #27c93f;
-}
+.window-header .dot.red { background: #ff5f56; }
+.window-header .dot.yellow { background: #ffbd2e; }
+.window-header .dot.green { background: #27c93f; }
 
 .window-title {
   color: #aaa;
@@ -279,12 +273,12 @@ nav a:hover {
 
 .tech-tags-extra .tag {
   background: #f4f0ec;
-  color: #6d6257;
+  color: #8c7b6e;
 }
 
 .btn-acessar-projeto {
   display: inline-block;
-  background: #d4c5b9; /* Tom creme/pastel correspondente */
+  background: #8c7b6e; /* Tom marrom/taupe correspondente */
   color: #fff;
   padding: 8px 14px;
   border-radius: 4px;
@@ -295,7 +289,7 @@ nav a:hover {
 }
 
 .btn-acessar-projeto:hover {
-  background: #bfae9e;
+  background: #726256;
 }
 
 /* Rodapé */
