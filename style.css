@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #007bff;
+  color: #a89f91;
 }
 
 /* Apresentação (Hero) */
@@ -66,7 +66,7 @@ nav a:hover {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #007bff;
+  border: 3px solid #d4c5b9; /* Tom creme/pastel original da borda */
 }
 
 .subtitulo {
@@ -84,7 +84,7 @@ nav a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #d4c5b9; /* Tom creme/pastel dos botões */
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -94,17 +94,17 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #bfae9e;
 }
 
 .btn-outline {
   background-color: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
+  color: #555;
+  border: 2px solid #d4c5b9;
 }
 
 .btn-outline:hover {
-  background-color: #007bff;
+  background-color: #d4c5b9;
   color: #fff;
 }
 
@@ -131,7 +131,7 @@ nav a:hover {
 }
 
 .secao-destaque {
-  background-color: #f1f4f8;
+  background-color: #f7f5f2; /* Fundo levemente em tom creme suave */
   max-width: 100%;
 }
 
@@ -159,7 +159,7 @@ nav a:hover {
   font-size: 14px;
   color: #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e1e4e8;
+  border: 1px solid #e6e1db;
 }
 
 /* Grade de Projetos */
@@ -196,8 +196,8 @@ nav a:hover {
 /* Tags de tecnologia */
 .tag {
   display: inline-block;
-  background: #eef2f7;
-  color: #007bff;
+  background: #f4f0ec;
+  color: #6d6257;
   padding: 4px 10px;
   border-radius: 4px;
   font-size: 12px;
@@ -278,13 +278,13 @@ nav a:hover {
 }
 
 .tech-tags-extra .tag {
-  background: #f0f0f0;
-  color: #333;
+  background: #f4f0ec;
+  color: #6d6257;
 }
 
 .btn-acessar-projeto {
   display: inline-block;
-  background: #007bff;
+  background: #d4c5b9; /* Tom creme/pastel correspondente */
   color: #fff;
   padding: 8px 14px;
   border-radius: 4px;
@@ -295,7 +295,7 @@ nav a:hover {
 }
 
 .btn-acessar-projeto:hover {
-  background: #0056b3;
+  background: #bfae9e;
 }
 
 /* Rodapé */
