@@ -5,41 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giulliana Oliveira | Portfólio</title>
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- Cabeçalho -->
+  <!-- Navegação -->
   <header>
-    <div class="logo">Giulliana Oliveira</div>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-laptop-code"></i>
+        Giulliana Oliveira
+      </div>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Apresentação Principal -->
+  <!-- Hero / Apresentação -->
   <section class="hero">
     <h1>Olá, sou a Giulliana</h1>
 
-    <!-- Sua Foto de Perfil -->
-    <div class="foto-container">
-      <img src="foto.jpg" alt="Foto de Giulliana Oliveira" class="foto-perfil">
+    <div class="profile-img-container">
+      <img src="foto.jpg" alt="Giulliana Oliveira" class="profile-img">
     </div>
 
-    <p class="subtitulo">Desenvolvedora Front-End em Formação & Estudante de Análise e Desenvolvimento de Sistemas</p>
+    <p class="hero-subtitle">
+      Desenvolvedora Front-End em Formação & Estudante de Análise e Desenvolvimento de Sistemas
+    </p>
 
-    <div class="botoes">
-      <a href="https://github.com/giullianaoliveira-dev" target="_blank" class="btn">GitHub</a>
-      <a href="https://www.linkedin.com/in/giullianaoliveira02" target="_blank" class="btn btn-outline">LinkedIn</a>
+    <div class="hero-buttons">
+      <a href="https://github.com/giullianaoliveira-dev" target="_blank" class="btn btn-primary">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>
     </div>
   </section>
 
   <!-- Sobre Mim -->
-  <section id="sobre" class="secao">
+  <section id="sobre" class="sobre-section">
     <h2>Sobre Mim</h2>
     <p>
       Estudante de Análise e Desenvolvimento de Sistemas com foco no desenvolvimento Front-End.
@@ -48,59 +55,63 @@
     </p>
   </section>
 
-  <!-- Habilidades -->
-  <section id="habilidades" class="secao secao-destaque">
-    <h2>Habilidades & Conhecimentos</h2>
-
-    <h3>Linguagens e Ferramentas</h3>
-    <ul class="skills-list">
-      <li>HTML5</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>Git & GitHub</li>
-    </ul>
-
-    <h3>Em Desenvolvimento</h3>
-    <ul class="skills-list">
-      <li>CSS3 / Estilização Web</li>
-      <li>Design Responsivo</li>
-    </ul>
-  </section>
-
-  <!-- Projetos -->
-  <section id="projetos" class="secao">
+  <!-- Seção Projetos (FinanPro e Fogão & Afeto) -->
+  <section id="projetos" class="projects-section">
     <h2>Projetos</h2>
-    <div class="grid-projetos">
 
-      <!-- SEU CARD ATUAL DO PORTFÓLIO -->
-      <div class="card-projeto">
-        <h3>Meu Portfólio Web</h3>
-        <p>Site pessoal desenvolvido para apresentar meu currículo e projetos acadêmicos.</p>
-        <span class="tag">HTML</span> <span class="tag">CSS</span>
-      </div>
+    <div class="projects-container">
 
-      <!-- NOVO CARD DO FINANPRO COM O MOCKUP VERTICAL ANIMADO -->
-      <div class="card-projeto">
-        <a href="https://giullianaoliveira-dev.github.io/finanpro/" target="_blank" class="vertical-mockup">
-          <div class="window-header">
+      <!-- Card 1: FinanPro -->
+      <div class="project-card">
+        <div class="browser-header">
+          <div class="browser-dots">
             <span class="dot red"></span>
             <span class="dot yellow"></span>
             <span class="dot green"></span>
-            <span class="window-title">FinanPro</span>
           </div>
-          <div class="window-body">
-            <img src="foto2.jpeg" alt="FinanPro Preview" class="scroll-image">
-          </div>
-        </a>
-        <div class="project-info-extra">
+          <span class="browser-title">FinanPro</span>
+        </div>
+        <div class="project-img-container">
+          <img src="foto2.jpeg" alt="FinanPro" class="project-img">
+        </div>
+        <div class="project-info">
           <h3>FinanPro</h3>
           <p>Site de mercado financeiro com cotações e simulador interativo.</p>
-          <div class="tech-tags-extra">
+          <div class="project-tags">
             <span class="tag">HTML5</span>
             <span class="tag">CSS3</span>
             <span class="tag">JavaScript</span>
           </div>
-          <a href="https://giullianaoliveira-dev.github.io/finanpro/" target="_blank" class="btn-acessar-projeto">Acessar Projeto ↗</a>
+          <a href="https://giullianaoliveira-dev.github.io/FinanPro/" target="_blank" class="btn-project">
+            Acessar Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Fogão & Afeto -->
+      <div class="project-card">
+        <div class="browser-header">
+          <div class="browser-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="browser-title">Fogão & Afeto</span>
+        </div>
+        <div class="project-img-container">
+          <img src="fogao-afeto-preview.jpeg" alt="Fogão & Afeto" class="project-img">
+        </div>
+        <div class="project-info">
+          <h3>Fogão & Afeto</h3>
+          <p>Site de restaurante e galeteria com cardápio interativo completo, navegação por categorias e sistema de pedidos integrado diretamente ao WhatsApp.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="https://giullianaoliveira-dev.github.io/fogao-e-afeto/" target="_blank" class="btn-project">
+            Acessar Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
       </div>
 
@@ -108,16 +119,11 @@
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="secao secao-destaque">
+  <section id="contato" class="contato-section">
     <h2>Contato</h2>
     <p>Vamos conversar? Entre em contato comigo através dos links abaixo:</p>
-    <p>Email: <a href="mailto:giullianasilva6@gmail.com" class="link-email">giullianasilva6@gmail.com</a></p>
+    <p class="email-contato">Email: giullianasilva6@gmail.com</p>
   </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2026 Giulliana Oliveira. Todos os direitos reservados.</p>
-  </footer>
 
 </body>
 
