@@ -327,6 +327,66 @@ header {
 }
 
 /* ==========================================================================
+   Ajustes Específicos para Múltiplos Botões e Caixa Demo nos Projetos
+   ========================================================================== */
+
+/* Caixa discreta com as credenciais de teste */
+.demo-access-box {
+  background-color: #f7f3f0;
+  border: 1px dashed #d9cecf;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  font-size: 0.83rem;
+  color: #5c4e46;
+}
+
+.demo-access-box p {
+  margin-bottom: 4px !important;
+  font-size: 0.85rem;
+  color: #3d322c;
+}
+
+.demo-access-box span {
+  display: block;
+  font-family: monospace;
+  color: #6b574b;
+}
+
+.demo-access-box code {
+  background-color: #e8e2dc;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Grupo de botões lado a lado no card */
+.project-buttons-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: auto;
+}
+
+/* Estilo do botão secundário de admin (tom nude complementar) */
+.btn-admin-action {
+  background-color: #f2ece6 !important;
+  color: #544339 !important;
+  border: 1px solid #d9cecf;
+}
+
+.btn-admin-action:hover {
+  background-color: #e6ded7 !important;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .project-buttons-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
    Seção Contato
    ========================================================================== */
 .contato-section {
